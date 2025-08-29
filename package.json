@@ -1,0 +1,22 @@
+{
+  "name": "chi-life-movement-portfolio",
+  "version": "1.0.0",
+  "description": "Ad portfolio for Chi Life Movement",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 5173 -o",
+    "start": "http-server . -p 8000",
+    "build": "mkdir -p dist && cp -r *.html ads designs dist/"
+  },
+  "keywords": [
+    "chi-life",
+    "tai-chi",
+    "ads",
+    "portfolio"
+  ],
+  "author": "Chi Life Movement",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
