@@ -4,9 +4,9 @@
   "description": "Ad portfolio for Chi Life Movement",
   "main": "index.html",
   "scripts": {
-    "dev": "http-server . -p 5173 -o",
-    "start": "http-server . -p 8000",
-    "build": "mkdir -p dist && cp -r *.html ads designs dist/"
+    "dev": "live-server --port=5173 --open=/ --watch=. --wait=200",
+    "start": "live-server --port=8000 --no-browser",
+    "build": "mkdir -p dist && cp -r *.html ads designs images dist/"
   },
   "keywords": [
     "chi-life",
@@ -17,6 +17,6 @@
   "author": "Chi Life Movement",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "live-server": "^1.2.2"
   }
 }
